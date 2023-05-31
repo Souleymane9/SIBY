@@ -30,6 +30,10 @@ def remove_DVD(self, musique: ModelMusique):
 ## Verification si type musique n'est pas égal à style de musique
 def verif(self, musique: ModelMusique):
     style= musique.immatriculation[7:9]
+    if style != self.type_music:
+        return False 
+    else:
+        return True
 
     
     
